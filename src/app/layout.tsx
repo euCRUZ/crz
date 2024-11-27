@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
+// import favicon from "./favicon.ico";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -14,6 +15,9 @@ const fontSans = FontSans({
 
 export const metadata: Metadata = {
   metadataBase: new URL(DATA.url),
+  icons: {
+    icon: "/favicon.ico",
+  },
   title: {
     default: DATA.name,
     template: `%s | ${DATA.name}`,
@@ -24,7 +28,7 @@ export const metadata: Metadata = {
     description: DATA.description,
     url: DATA.url,
     siteName: `${DATA.name}`,
-    locale: "en_US",
+    locale: "pt_BR",
     type: "website",
   },
   robots: {
@@ -54,7 +58,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="pt-BR" suppressHydrationWarning>
+      {/* <head>
+        <link rel="icon" href="/public/favicon.ico" />
+      </head> */}
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased max-w-2xl mx-auto py-12 sm:py-24 px-6",

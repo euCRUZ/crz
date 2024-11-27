@@ -2,16 +2,17 @@ import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
 
 export const DATA = {
-  name: "Giovanni Cruz",
-  initials: "GC",
+  name: "CRZ",
+  initials: "CRZ",
   url: "https://dillion.io",
   location: "Brazil",
   locationLink: "https://www.google.com/maps/place/saopaulo",
-  description:
-    "Software Engineer Entrepreneur. I love building things and helping people.",
+  description: "Aqui, transformamos ideias em soluções web personalizadas.",
+  // summary:
+  //   "At the start of 2023, I quit my job as a architecture intern to go fulltime into building and scaling websites and softwares. Nowdays, [I am graduating in Software Analysis and Development.](/#education), PROJECT, and [college projects](/#hackathons).",
   summary:
-    "At the start of 2023, I quit my job as a architecture intern to go fulltime into building and scaling websites and softwares. Nowdays, [I am graduating in Software Analysis and Development.](/#education), PROJECT, and [college projects](/#hackathons).",
-  avatarUrl: "/me.jpeg",
+    "Na CRZ, criamos sites e softwares sob medida para ajudar negócios a crescer. Combinamos tecnologia moderna e design funcional para entregar resultados que impressionam. Vamos transformar o digital no maior aliado da sua empresa?",
+  avatarUrl: "/crz.png",
   skills: [
     "React",
     // "Next.js",
@@ -35,7 +36,7 @@ export const DATA = {
     "JavaScript",
     "git",
     "github",
-    "figma", 
+    "figma",
     "visualstudiocode",
     "html5",
     "css3",
@@ -43,33 +44,41 @@ export const DATA = {
     "vercel",
     "bootstrap",
   ],
-  navbar: [
-    { href: "/", icon: HomeIcon, label: "Home" },
-  ],
+
+  navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
   contact: {
     email: "giovannicruzvinhedo@gmail.com",
     tel: "+5519997172825",
     social: {
-      GitHub: {
-        name: "GitHub",
-        url: "https://github.com/euCRUZ",
-        icon: Icons.github,
-
+      Instagram: {
+        name: "Instagram",
+        url: "https://www.instagram.com/crz.web",
+        icon: Icons.instagram,
         navbar: true,
+      },
+      InstagramDM: {
+        name: "Instagram",
+        url: "https://www.instagram.com/direct/t/17842722137904976",
+        icon: Icons.instagram,
+        navbar: false,
+      },
+      WhatsApp: {
+        name: "Whatsapp",
+        url: "https://wa.me/5519997172825",
+        icon: Icons.phone,
+        navbar: false,
       },
       LinkedIn: {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/eugiovannicruz/",
         icon: Icons.linkedin,
-
         navbar: true,
       },
-      X: {
-        name: "X",
-        url: "https://dub.sh/dillion-twitter",
-        icon: Icons.x,
-
-        navbar: false,
+      GitHub: {
+        name: "GitHub",
+        url: "https://github.com/euCRUZ",
+        icon: Icons.github,
+        navbar: true,
       },
       email: {
         name: "Send Email",
@@ -87,37 +96,37 @@ export const DATA = {
       href: "https://atomic.finance",
       badges: [],
       location: "Remote",
-      title: "Software Engineer",
+      title: "Corretora de seguros",
       logoUrl: "/piva.png",
-      start: "Aug. 2024",
-      end: "Still",
+      start: "",
+      end: "",
       description:
-        "Implemented the Bitcoin discreet log contract (DLC) protocol specifications as an open source Typescript SDK. Dockerized all microservices and setup production kubernetes cluster. Architected a data lake using AWS S3 and Athena for historical backtesting of bitcoin trading strategies. Built a mobile app using react native and typescript.",
+        "Criação de umm software de gestão e cadastro de seguros, aumentando em tantos %.",
     },
     {
       company: "Loja Mikonos",
       href: "",
       badges: [],
       location: "Remote",
-      title: "Software Engineer",
+      title: "E-commerce de roupas",
       logoUrl: "/mikonos.jpg",
-      start: "Aug 2024",
-      end: "Sep. 2024",
+      start: "",
+      end: "",
       description:
-        "",
+        "Remodelação do site, deixando seu visual mais atrativo e moderno.",
     },
     {
       company: "Facchini Advogados",
       href: "",
       badges: [],
       location: "Remote",
-      title: "Frontend Developer",
+      title: "Escritório de advocacia",
       logoUrl: "/facchini.svg",
       start: "",
-      end: "March 2024",
+      end: "",
       description:
-        "",
-    }
+        "Criação do site da empresa, com foco em SEO e otimização para dispositivos móveis.",
+    },
   ],
   education: [
     {
@@ -131,101 +140,65 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "llm.report",
-      href: "https://llm.report",
-      dates: "April 2023 - September 2023",
+      title: "Piva Orçamentos",
+      href: "https://pivasolucoes.com.br/formulario",
+      dates: "11/2024",
       active: true,
       description:
-        "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
+        "Desenvolvimento de uma plataforma completa, no qual os clientes cadastram os dados para os seguros desejados, e, através de um gerenciamento privativo, a empresa consegue visualizar e gerenciar os seguros de seus clientes, analisando gráficos e gerando relatórios.",
       technologies: [
-        "Next.js",
+        // "Next.js",
         "Typescript",
-        "PostgreSQL",
-        "Prisma",
+        "Pocketbase",
+        // "Prisma",
         "TailwindCSS",
         "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
+        // "Magic UI",
+        "React",
+        // "Cloudflare Workers",
       ],
       links: [
         {
           type: "Website",
-          href: "https://llm.report",
+          href: "https://pivasolucoes.com.br/formulario",
           icon: <Icons.globe className="size-3" />,
         },
-        {
-          type: "Source",
-          href: "https://github.com/dillionverma/llm.report",
-          icon: <Icons.github className="size-3" />,
-        },
+        // {
+        //   type: "Source",
+        //   href: "https://github.com/dillionverma/llm.report",
+        //   icon: <Icons.github className="size-3" />,
+        // },
       ],
-      image: "",
-      video: "https://cdn.llm.report/openai-demo.mp4",
+      image: "/pivascreen.png",
+      video: "",
     },
     {
-      title: "Automatic Chat",
-      href: "https://automatic.chat",
-      dates: "April 2023 - March 2024",
+      title: "Facchinni Advogados",
+      href: "https://facchiniadvogados.com.br/",
+      dates: "02/2024",
       active: true,
       description:
-        "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
-      ],
+        "Desenvolvimento de uma landig page moderna e responsiva para o escritório de advocacia Facchini Advogados.",
+      technologies: ["HTML", "CSS", "JavaScript", "SEO"],
       links: [
         {
           type: "Website",
-          href: "https://automatic.chat",
+          href: "https://facchiniadvogados.com.br/",
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
+      image: "/advscreen.png",
+      video: "",
     },
   ],
-  hackathons: [
+  developer: [
     {
-      title: "HackDavis",
-      dates: "January 20th - 21st, 2018",
-      location: "Davis, California",
+      title: "Giovanni Cruz",
+      dates: "",
+      location: "São Paulo, Brasil",
       description:
-        "Developed a mobile application which allocates a daily carbon emission allowance to users to move towards a sustainable environment.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-davis.png",
-      win: "Best Data Hack",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg",
-      links: [
-        {
-          title: "Devpost",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://devpost.com/software/my6footprint",
-        },
-        {
-          title: "ML",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/Wallet6/my6footprint-machine-learning",
-        },
-        {
-          title: "iOS",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/Wallet6/CarbonWallet",
-        },
-        {
-          title: "Server",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/Wallet6/wallet6-server",
-        },
-      ],
+        "Co-founder da CRZ, especializado em desenvolvimento web, mídias sociais, tráfego pago e design. Atua no mercado de tecnologia desde 2021, com foco em desenvolvimento de sites e softwares.",
+      image: "/me.jpeg",
     },
   ],
 } as const;
