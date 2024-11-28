@@ -52,6 +52,7 @@ const Dock = React.forwardRef<HTMLDivElement, DockProps>(
         onMouseLeave={() => mousex.set(Infinity)}
         {...props}
         className={cn(dockVariants({ className }))}
+        
       >
         {renderChildren()}
       </motion.div>

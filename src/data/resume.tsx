@@ -47,7 +47,7 @@ export const DATA = {
 
   navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
   contact: {
-    email: "giovannicruzvinhedo@gmail.com",
+    email: "crzwebdigital@gmail.com",
     tel: "+5519997172825",
     social: {
       Instagram: {
@@ -81,11 +81,10 @@ export const DATA = {
         navbar: true,
       },
       email: {
-        name: "Send Email",
-        url: "mailto:giovannicruzvinhedo@gmail.com",
+        name: "Email",
+        url: "mailto:crzwebdigital@gmail.com",
         icon: Icons.email,
-
-        navbar: true,
+        navbar: false,
       },
     },
   },
@@ -101,7 +100,7 @@ export const DATA = {
       start: "",
       end: "",
       description:
-        "Criação de umm software de gestão e cadastro de seguros, aumentando em tantos %.",
+        'Criação de um software de gestão e cadastro de seguros. "A mudança para o software da CRZ melhorou em 100% a nossa produtividade, agilidade e usabilidade em relação ao sistema antigo que usavamos." - Marcel Andréa, Sócio Proprietário da Piva Seguros.',
     },
     {
       company: "Loja Mikonos",

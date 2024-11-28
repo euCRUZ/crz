@@ -11,6 +11,8 @@ import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
 import Image from "next/image";
+import Marquee from "@/components/magicui/marquee";
+import { Slider } from "@/components/magicui/slider";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -57,7 +59,7 @@ export default function Page() {
       <section id="work">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
-            <h2 className="text-xl font-bold">Nossos clientes</h2>
+            <h2 className="text-xl font-bold">Alguns dos nossos parceiros</h2>
           </BlurFade>
           {DATA.work.map((work, id) => (
             <BlurFade
@@ -219,6 +221,11 @@ export default function Page() {
         </div>
       </section> */}
 
+      {/* <section id="marquee">
+        <Slider />
+      </section> */}
+
+
       <section id="contact">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
@@ -235,10 +242,21 @@ export default function Page() {
                 <Link
                   href={DATA.contact.social.InstagramDM.url}
                   className="text-blue-500 hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Instagram
                 </Link>{" "}
-                e vamos responder rapidinho. Vamos construir algo incrível
+                ou no{" "}
+                <Link
+                  href={DATA.contact.social.LinkedIn.url}
+                  className="text-blue-500 hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  LinkedIn
+                </Link>
+                {""}, e vamos responder rapidinho. Vamos construir algo incrível
                 juntos!
               </p>
             </div>
