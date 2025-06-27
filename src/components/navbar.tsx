@@ -84,7 +84,6 @@ export default function Navbar() {
                   "size-12"
                 )}
               >
-                {/* Loading spinner para a bandeira */}
                 {loading && (
                   <span className="w-6 h-6 flex items-center justify-center animate-spin mr-2">
                     <svg

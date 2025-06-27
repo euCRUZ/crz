@@ -20,16 +20,12 @@ const ReviewCard = ({
     <figure
       className={cn(
         "relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4",
-        // light styles
         "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
-        // dark styles
         "dark:border-gray-50/[.08] dark:bg-gray-50/[.01] dark:hover:bg-gray-50/[.15]",
-        // mobile styles
         "mobile:opacity-0 mobile:transition-opacity mobile:duration-500 mobile:ease-in-out mobile:transform mobile:translate-y-4"
       )}
     >
       <div className="flex flex-row items-center gap-2">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img className="rounded-full" width="32" height="32" alt="" src={img} />
         <div className="flex flex-col">
           <figcaption className="text-sm font-medium dark:text-white">
@@ -44,13 +40,10 @@ const ReviewCard = ({
 }
 
 export function MarqueeDemo() {
-  // Estado para controlar o idioma (padrão: inglês)
   const [language, setLanguage] = useState<"en" | "pt">("en")
 
-  // Dados baseados no idioma selecionado
   const currentData = DATA[language]
 
-  // Divida as reviews em duas linhas
   const firstRow = currentData.reviews.slice(0, currentData.reviews.length / 2)
   const secondRow = currentData.reviews.slice(currentData.reviews.length / 2)
 

@@ -14,8 +14,6 @@ import IconCloud from "@/components/ui/icon-cloud"
 import { MarqueeDemo } from "@/components/marquee-demo"
 import { useTheme } from "next-themes"
 import { useLanguage } from "../../languageContext"
-// import { useEffect } from "react"
-// import Lenis from "lenis"
 
 const BLUR_FADE_DELAY = 0.04
 
@@ -25,22 +23,10 @@ export default function Page() {
   const { language } = useLanguage()
   const currentData = DATA[language]
 
-  // useEffect(() => {
-  //   const lenis = new Lenis()
-
-  //   function raf(time: any) {
-  //     lenis.raf(time)
-  //     requestAnimationFrame(raf)
-  //   }
-
-  //   requestAnimationFrame(raf)
-  // }, [])
-
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <Navbar />
 
-      {/* Hero Section */}
       <section id="hero">
         <div className="mx-auto w-full max-w-2xl space-y-8">
           <div className="gap-2 flex justify-between">
@@ -79,7 +65,6 @@ export default function Page() {
         </div>
       </section>
 
-      {/* About Section */}
       <section id="about">
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
           <h2 className="text-xl font-bold">{currentData.sections[0]}</h2>
@@ -91,7 +76,6 @@ export default function Page() {
         </BlurFade>
       </section>
 
-      {/* Skills Section */}
       <section id="skills">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
@@ -118,7 +102,6 @@ export default function Page() {
         </div>
       </section>
 
-      {/* Projects Section */}
       <section id="projects">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
@@ -195,7 +178,6 @@ export default function Page() {
         </div>
       </section>
 
-      {/* Contact Section */}
       <section id="contact" style={{ marginTop: "-20px" }}>
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>

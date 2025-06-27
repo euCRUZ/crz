@@ -25,14 +25,9 @@ export function HackathonCard({
 }: Props) {
   return (
     <li className="relative ml-16 py-4">
-      {" "}
-      {/* Ajuste o espaçamento lateral */}
       <div className="absolute -left-20 top-2 flex items-center justify-center bg-white rounded-full">
         <Avatar className="border w-16 h-16 m-auto">
-          {" "}
-          {/* Aumente o tamanho do Avatar */}
-          <AvatarImage src={image} alt={title} className="object-cover" />{" "}
-          {/* Use object-cover */}
+          <AvatarImage src={image} alt={title} className="object-cover" />
           <AvatarFallback>{title[0]}</AvatarFallback>
         </Avatar>
       </div>

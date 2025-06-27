@@ -176,11 +176,6 @@ export const DATA = {
             href: "https://github.com/emiliobiasi/pivaseguros",
             icon: <Icons.github className="size-3" />,
           },
-          // {
-          //   type: "Source",
-          //   href: "https://github.com/dillionverma/llm.report",
-          //   icon: <Icons.github className="size-3" />,
-          // },
         ],
         image: "/pivascreen.avif",
         video: "",
@@ -523,7 +518,6 @@ export const DATA = {
 
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    // { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
 
   flagIcons: [
